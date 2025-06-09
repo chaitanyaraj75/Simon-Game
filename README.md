@@ -22,7 +22,7 @@ Challenge your memory by repeating increasingly complex color sequences.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/chaitanyaraj75/simon-game.git
+    git clone https://github.com/chaitanyaraj75/Simon-Game.git
     ```
 2. Open `index.html` in your browser.
 
