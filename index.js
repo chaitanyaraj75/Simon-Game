@@ -27,7 +27,7 @@ $(".btn").click(function(){
             }
         }
         else{
-            $("h1").text("Game Over, Press Any Key to Restart");
+            $("h1").text("Game Over, Press Enter to Restart");
             $("body").addClass("game-over");
             // alert("wrong");
             playSound("wrong");
@@ -42,8 +42,9 @@ $(".btn").click(function(){
     
 })
 
-$(document).on("keydown",function(){
-    if(userClickedPattern.length==0){
+$(document).on("keydown",function(event){
+    const key = event.key;
+    if(gamePatern.length==0 && key=="Enter"){
         nextsequence();
     }
 })
